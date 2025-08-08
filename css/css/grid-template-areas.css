@@ -1,0 +1,38 @@
+.container{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, auto);
+    grid-template-areas: "div-6 div-6 div-3"
+         "div-4 div-5 div-1"
+         "div-2 div-2.";
+}
+
+  .div-1,
+  .div-2,
+  .div-3,
+  .div-4,
+  .div-5,
+  .div-6{
+       border: 1px solid green;
+       padding: 20px;
+       text-align:center;
+    }
+    .div-1{
+        grid-area: div-1;
+    }
+    .div-2{
+        grid-area: div-2;
+    }
+    .div-3{
+        grid-area: div-3;
+    }
+    .div-4{
+        grid-area: div-4;
+    }
+    .div-5{
+        grid-area: div-5;
+    }
+    .div-6{
+        grid-area: div-6;
+    }

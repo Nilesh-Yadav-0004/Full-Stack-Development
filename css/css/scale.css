@@ -1,0 +1,11 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+div{
+    scale: 0.2;
+}
+
+div:hover{
+    scale: 1;
+}

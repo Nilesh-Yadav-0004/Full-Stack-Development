@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-Gradient(to bottom right, rgb(232, 10, 47), green);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+h1{
+    font-size: 150px;
+    background: radial-gradient(circle, red, blue, pink);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

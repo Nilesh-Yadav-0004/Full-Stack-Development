@@ -1,0 +1,11 @@
+input::placeholder{
+    text-transform: capitalize;
+    color: red;
+}
+input[type='text']{
+    border: 2px solid red;
+}
+input[type='email']{
+    border: 2px solid purple;
+}
+

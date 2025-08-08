@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.anime {
+    width: 50%;
+    height: 100px;
+    background: red;
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    margin: 20px;
+}
+
+.anime{
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: rotation_logo 2s linear infinite normal;
+}
+@keyframes rotation_logo {
+    from{
+       transform:rotate(0deg);
+}
+    to{
+       transform: rotate(360deg);
+    }
+}

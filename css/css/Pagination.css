@@ -1,0 +1,8 @@
+.btn:hover::after{
+    flex-direction: column;
+    color: #000 !important;
+}
+
+.btn:hover{
+    color: #000;
+}

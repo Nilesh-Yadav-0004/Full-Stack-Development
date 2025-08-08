@@ -1,0 +1,32 @@
+/* child selector */
+ div p{
+    color: red;
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    background: black;
+ }
+
+ /* Name space selector */
+ div > p + p {
+    color: green;
+ }
+ /* sibling selector */
+ div + h1 {
+    color: red;
+ }
+    
+ /* selector list */
+ p{
+    color: blueviolet;
+ }
+ /* subsequent sibling selector */
+ div ~ p,
+ div ~ h1,
+ div ~ p{
+    color: green;
+ }

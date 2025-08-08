@@ -1,0 +1,24 @@
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.rotate_45 {
+    rotate: 45deg;
+}
+.rotate_90 {
+    rotate: 90deg;
+}
+.rotate_negative {
+    rotate: -90deg;
+}

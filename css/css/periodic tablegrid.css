@@ -1,0 +1,33 @@
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, 50px); /* 18 groups */
+  grid-template-rows: repeat(7, 70px);     /* 7 periods */
+  gap: 5px;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.element {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.element .number {
+  font-size: 12px;
+  display: block;
+}
+
+.element .symbol {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+.element .name {
+  font-size: 10px;
+  display: block;
+}

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --width-first:50px;
+    --width-second:100px;
+}
+
+  .main {
+    border: 1px solid red;
+    height:calc(var(--width-first) + var(--width-first));
+    width: calc(var(--width-first) + var(--width-second));
+  }

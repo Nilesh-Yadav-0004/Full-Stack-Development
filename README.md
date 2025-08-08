@@ -1,8 +1,8 @@
 # Full-Stack-Development
 
-
+<!-- If Want to clone -->
 git clone url
-
+<!-- For Pushing the code to github -->
 git add -A
 
 git commit -m 'comments'

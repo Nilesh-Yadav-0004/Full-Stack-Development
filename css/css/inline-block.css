@@ -1,0 +1,23 @@
+.div-1{
+    display: inline;
+    color: green;
+    border: 1px solid red;
+}
+
+.div-2{
+    display: inline-block;
+    color: purple;
+    border: 1px solid red;
+}
+
+.div-3{
+    display: none;
+    color: blue;
+    border: 1px solid red;
+}
+
+.div-4{
+    display: block;
+    color: yellow;
+    border: 1px solid red;
+}

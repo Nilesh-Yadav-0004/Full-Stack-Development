@@ -1,0 +1,31 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    color: antiquewhite;
+    font-weight: bold;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.skew-x{
+    transform: skew(20deg); /* skewed 20 deg along the x-axis*/
+}
+
+.skew-y{
+    transform: skew(-20deg); /* skewed -20 deg along the y-axis*/
+}
+
+.skew-xy{
+    transform: skew(
+        20deg,
+        10deg
+        ); /* skewed along both the x-axis & y-axis*/
+}

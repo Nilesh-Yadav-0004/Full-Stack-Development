@@ -1,0 +1,67 @@
+.container{
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto, auto);
+    grid-template-areas: "div-6 div-6 div-3"
+         "div-4 div-5 div-1"
+         "div-2 div-2.";
+}
+button{
+    height: 50px;
+}
+.container{
+    border: 1px;
+    height: 100vh;
+    width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.div-1,
+  .div-2,
+  .div-3,
+  .div-4,
+  .div-5,
+  .div-6,
+  .div-7,
+  .div-8,
+  .div-9,
+  .div-10,
+  {
+       border: 5px solid blue;
+       padding: 20px;
+       text-align:center;
+    }
+    .div-1{
+        grid-area: turnip;
+    }
+    .div-2{
+        grid-area: greens;
+    }
+    .div-3{
+        grid-area: yarrow;
+    }
+    .div-4{
+        grid-area: ricebean;
+    }
+    .div-5{
+        grid-area: rutabaga;
+    }
+    .div-6{
+        grid-area: endive;
+    }
+    .div-7{
+        grid-area: cauliflower;
+    }
+    .div-8{
+        grid-area: sea lettuce;
+    }
+    .div-9{
+        grid-area: kohlrabi;
+    }
+    .div-10{
+        grid-area: amaranth;
+    }

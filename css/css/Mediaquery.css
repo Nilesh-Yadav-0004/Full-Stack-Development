@@ -1,0 +1,13 @@
+@media (max-width:430px){
+    main{
+        flex-direction: column;
+    }
+    .section_1>section,
+    .section_2>article,
+        width: 100%;
+}
+
+nav{
+    height: 30px;
+    padding: 0;
+}
