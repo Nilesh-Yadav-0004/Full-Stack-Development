@@ -22,7 +22,7 @@ while (num <= 100){
 
 // Q2. Print even numbers between 1 to 50 using a while loop?
 
-let num =2;
+let nm =2;
 
 while (num <=50){
     console.log(num);
@@ -31,7 +31,7 @@ while (num <=50){
 
 // Q3. Print numbers in reverse from 10 to 1?
 
-let num =10;
+let n =10;
 
 while (num >=1){
     console.log(num);
@@ -40,10 +40,32 @@ while (num >=1){
 
 // Q4. Sum the numbers from 1 to N using a while loop?
 let N =10;
-let num =1;
-let num =0;
+let n1 =1;
+let n2m =0;
 
 while (num <=N){
-    
+    console.log(num);
 }
 
+// Q5. Count how many digits are in a given number using a while loop?
+
+let number = 10;
+let count = 0;
+
+while (num > 0){
+    console.log("Total digits:");
+}
+
+// Q6. Reverse a given number using a while loop?
+
+let = 20;
+
+while (n >=2){
+    console.log(num);
+}
+
+//  Q7. 
+
+
+
+ 
