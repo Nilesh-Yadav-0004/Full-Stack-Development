@@ -15,9 +15,9 @@ let value = age>= 18 ? console.log("yes you'r eligible to vote "):  console.log 
 
 // Q1. A number is given.check whether it is even or odd ?.
 
-//  let number =26;
+ let n = 26;
 
- if(number %2==0){
+ if(n %2==0){
     console.log("yes it is a Even number");
  }
  else{
@@ -31,14 +31,15 @@ let value = age>= 18 ? console.log("yes you'r eligible to vote "):  console.log 
  if(number>0){
     console.log("The number is positive");
  }
- else{
-    if(number<0){
-        console.log("The number is Negative");
-    }
+
+ if(number<0){
+    console.log("The number is Negative");
+}
+
 else{
     console.log("The number is Zero");
 }
- }
+ 
   
 // Q3. Enter two numbers. Find the greater one?.
 
@@ -48,7 +49,7 @@ let num2 = 22;
 if(num1 > num2){
     console.log("The num1 is greater then num2");
 }
-else{
+
 if(num2 > num1){
     console.log("The num2 is greater then  num1")
 }
@@ -59,21 +60,19 @@ else{
 
 // Q4. Take three numbers. Find the among them?.
 
-let num1 = 10;
-let num2 = 20;
-let num3 = 30;
+let num4 = 10;
+let num5 = 20;
+let num6 = 30;
 
 if(num1 > num2){
     console.log("The num1 is greater than num3");
 }
-else{
+
 if(num2 > num1){
     console.log("The num2 is greater than num1");
 }
+
 else{
-if(num3 > num2&num1){
-    console.log("The num3 is greater than num2&num1");
-}
-else{
-    // console.log(All num are equal);
+    console.log("All numbers are equal");
+    
 }

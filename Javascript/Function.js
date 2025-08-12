@@ -23,7 +23,7 @@ function sum(first,second,third){
     return sum
 }
 
-let x=sum(1,2,3)
+let x1=sum(1,2,3)
 console.log(x);
 
 
@@ -34,6 +34,9 @@ const sum=(first,second,third)=>{
     return sum
 }
 
-let x=sum(1,2,3)
+let x2=sum(1,2,3)
 console.log(x);
+
+
+
 

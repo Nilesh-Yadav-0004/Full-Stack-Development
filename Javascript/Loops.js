@@ -21,18 +21,18 @@ for(let i=1; i<21; i++){
 
     /* Find the prime number from 1 to 100  */
 
-     for(let i=1; i<100; i++){
-        if(i % j === 0){
-            console.log(i +" is Prime number")
-        }
-     }
+    //  for(let i=1; i<100; i++){
+    //     if(i % j === 0){
+    //         console.log(i +" is Prime number")
+    //     }
+    //  }
      
 
     //  Let arr=["Mehfooz",'Khan',"nilesh","Yadav"];
 
-    for (let i =0; i < arr.length; i++){
-        console.log(arr[i]);
-    }
+    // for (let i =0; i < arr.length; i++){
+    //     console.log(arr[i]);
+    // }
 
 
 
@@ -45,6 +45,8 @@ for(let i=1; i<21; i++){
     // }
 
         /* Q2. Print the even the numbers between 1 and 50. */
+
+
 
     for (let i =1; i < 50; i++);
         if(i % 2 === 0);{

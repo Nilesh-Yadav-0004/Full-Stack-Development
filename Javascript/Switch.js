@@ -42,8 +42,7 @@ switch (key) {
 
 // Q1. Take a number (1-7) print the day of the week(1 = Monday, 7 = Sunday)?.
 
-let week =1;
-
+let week =2;
 switch (week) {
     case 1:
         console.log('Monday');
@@ -70,22 +69,22 @@ switch (week) {
 
 // Q2. Input a character (a,e,i,o,u).Print "Vowel" if it's a vowel,otherwise "Consonant".
 
-let char = a,e,i,o,u;
+let char = "b";
  
 switch (char) {
-    case a:
+    case "a":
         console.log('Vowel');
         break;
-    case e:
+    case "e":
         console.log('Vowel');
         break;
-    case i:
+    case "i":
         console.log('Vowel');
         break;
-    case o:
+    case "o":
         console.log('Vowel');
         break;
-    case u:
+    case "u":
         console.log('Vowel');
         break;
     default:
@@ -95,7 +94,7 @@ switch (char) {
 
 //  Q3. Take a month number (1-12). Print the month name.
 
-let month = 1;
+let month = 10;
 
 switch (month) {
     case 1:
@@ -155,16 +154,16 @@ switch (number) {
 
 // Q5. A user selects a drink: c=coffee. T=Tea. J=Juice. W=Water. Print the Selected item.
 
-let drink = C.T.J.W;
+let drink = "T";
 
 switch (drink) {
-    case C:
+    case "C":
         console.log('coffee');
         break;
-    case T:
+    case "T":
         console.log('Tea');
         break;
-    case J:
+    case "J":
         console.log('Juice');
         break;
     default:
