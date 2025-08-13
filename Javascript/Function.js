@@ -29,12 +29,12 @@ console.log(x);
 
 // Arrow Function
 
-const sum=(first,second,third)=>{
-    let sum=first+second+third;
-    return sum
+const sum1=(first,second,third)=>{
+    let sum1=first+second+third;
+    return sum1
 }
 
-let x2=sum(1,2,3)
+let x2=sum1(1,2,3)
 console.log(x);
 
 
