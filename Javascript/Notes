@@ -1,0 +1,47 @@
+/* Data type */
+// Single quote
+var str = 'string'; 
+
+// Double quote
+
+var str = "string";
+
+// back-tick -> ternary operator '${name}'
+
+var str
+
+var num = 19;
+
+var bool = true;
+
+// Array of number
+var arr = [1,2,3,4];
+
+// Array of object
+var arrOfObject = [{ str: 'name'}, { number: 2}];
+
+var obj = { name: 'Nilesh', age: 21 };
+
+var und = undefined;
+
+var nul = null;
+
+var sym = Symbol();
+
+// Strings 
+
+
+/* Types of operators */
+
+// Logical operators 
+
+let num1="3";
+let num2=3;
+
+let flag=true;
+
+let andCondition= num1==num2 || num2 ==! num1+1;
+console.log('~ andCondition:' );
+
+
+

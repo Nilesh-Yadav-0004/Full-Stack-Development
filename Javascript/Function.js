@@ -38,5 +38,45 @@ let x2=sum1(1,2,3)
 console.log(x);
 
 
+// Hosting,promise,Closure are most imp for interview
+
+;
+let number_1=0;
+let number_2=5;
+
+function annualDay(a,b){
+    console.log('a);
+     if(a>b){
+        return 'this is the greater then b and the value of a is ${a}';
+     }
+     else{
+        return 'this is the greater then a and the value of b is ${b}';
+     }
+}
+
+// Normal Function
+
+function annualDay(){
+    console.log()
+}
+let ans = anualDay(number_1,number_2);
+console.log('~ans:', ans);
+
+
+// Arrow Function
+
+
+let number_3=undefined;'
+let number_4=5;
+
+const anualDay=(a=40,b=60)=>{
+    if(a>b){
+        return 'this is the greater then b and the value of a is ${a}';
+    }
+    else{
+        return 'this is the greater then a and the value of b is ${b}';
+    }
+}
+
 
 
