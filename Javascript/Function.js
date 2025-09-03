@@ -1,4 +1,4 @@
-/* Basics of Fuctions in JS */
+/* Basics of Functions in JS */
 
 function nilesh(){
     console.log('hello nilesh');
