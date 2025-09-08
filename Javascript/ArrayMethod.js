@@ -50,3 +50,20 @@ console.log('~ array1:', array1);
 
 let newArr1=array1.slice(3,5);
 console.log('newArr:', newArr);
+
+// Strings in ArrayMethod
+
+let str='   nilesh yadav    ';
+
+let newstr=str.trim();
+
+let upper=newstr.toUpperCase();
+
+let lower= upper.toLowerCase();
+
+let arrstr=newstr.split("");
+
+console.log('~ newstr:',upper);
+console.log('~ newstr:',lower);
+
+// String 
