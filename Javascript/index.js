@@ -3,6 +3,7 @@ let num2 = 3;
 
 let num4 = 3;
 let num5 = 3;
+console.log('🚀 ~ num5:', num5);
 
 // console.log() operator: (||);
 console.log(num1 + 1 == num2 && num4 == num5);
