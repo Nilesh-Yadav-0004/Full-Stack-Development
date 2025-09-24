@@ -34,5 +34,6 @@ const render_UI = (value) =>{
         cardDiv.append(img, id, title, description, category);
 
         mainDiv.append(cardDiv);
-    })
+    });
+    
 }

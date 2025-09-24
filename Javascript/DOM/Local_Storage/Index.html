@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+    <h1>hello Nilesh Yadav how are you???</h1>
+    <button id="btn" onclick="LS_insert()">add to Ls</button>
+</body>
+<script>
+    // local Storage
+
+    let heading_1 = document.getElementsByTagName("h1")[0].innerText;
+    let btn = document.getElementById("btn");
+    let div_LS = document.getElementsByTagName("div")[0];
+
+    function LS_insert(){
+        localStorage.setItem("name", heading_1);
+        render_UI();
+    }
+    
+        /*Taking Id and adding EventListener  */ 
+        // btn.addEventListener("click", function(){
+        //     localStorage.setItem("name", heading_1)
+        //     render_UI();
+        // })
+
+        function render_UI(){
+            let Ls_value = localStorage.getItem("name") || "";
+
+            div_LS.innerHTML = `
+            <p>${Ls_value}</p>
+            `
+        }
+</script>
+</html>
