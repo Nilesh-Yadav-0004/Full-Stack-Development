@@ -7,27 +7,33 @@
 </head>
 <body>
     <h1>Drag and Drop example</h1>
-    <div id="dragme"draggable="true" style="width: 100px;height: 100px;background: red;">
+    <div id="dragme" draggable="true" 
+         style="width: 100px; height: 100px; background: red;">
     </div>
-    <div id="dropzone" style="width: 200px;height: 200px;border: 2px dashed black;margin-top: 20px;"></div>
+    <div id="dropzone" 
+         style="width: 200px; height: 200px; border: 2px dashed black; margin-top: 20px;">
+    </div>
 </body>
 <script>
-    let Drag = document.getElementById("dragme");
-    let Drop = document.getElementById("dropzone");
+    let drag = document.getElementById("dragme");
+    let drop = document.getElementById("dropzone");
 
+    // Start dragging
     drag.ondragstart = (e) => {
-        if(drag.getAttribute("draggable")==="false"){
+        if (drag.getAttribute("draggable") === "false") {
             e.preventDefault();
-            return false; 
+            return false;
         }
-        e.dataTransfer.setData("text",e.target.id);
+        e.dataTransfer.setData("text", e.target.id); // Store dragged element id
     };
 
+    // Allow dropping
     drop.ondragover = (e) => e.preventDefault();
 
-    drop.ondrag = (e) => {
+    // Drop event
+    drop.ondrop = (e) => {
         e.preventDefault();
-        let data = e.dataTransfer.getdata("text");
+        let data = e.dataTransfer.getData("text"); // FIXED: getData
         let value = document.getElementById(data);
         drop.appendChild(value);
     };
