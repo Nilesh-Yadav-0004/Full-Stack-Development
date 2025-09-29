@@ -1,0 +1,432 @@
+/* ================================
+   Global Styles & Variables
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary: #7c3aed;
+    --secondary: #3a3aff;
+    --accent: #8e44ad;
+    --dark: #333;
+    --text: #555;
+    --muted: #777;
+    --light-bg: #f9f9f9;
+    --highlight: orange;
+}
+
+body {
+    background: #fff;
+    color: var(--text);
+}
+
+/* ================================
+   Header / Navbar
+================================ */
+.headbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ✅ fixed typo */
+    padding: 20px 5%;
+    background-color: #fff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--secondary);
+}
+
+.ul-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.ul-links a {
+    text-decoration: none;
+    color: var(--text);
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.ul-links a:hover {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+/* ================================
+   Auth Buttons
+================================ */
+.auth-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.get-started {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.get-started:hover {
+    background-color: #5f28c7;
+}
+
+/* ================================
+   Hero Section
+================================ */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 5%;
+    gap: 40px;
+}
+
+.main_hero {
+    max-width: 45%;
+}
+
+.main_hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 60px;
+    color: #111;
+}
+
+.main_hero p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: larger;
+    color: var(--text);
+}
+
+.lets-started {
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Image */
+.main_image {
+    position: relative;
+    width: 50%;
+}
+
+.main_image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.thought_box {
+    position: absolute;
+    bottom: 20px;
+    left: -80px;
+    background: #1e1e6c;
+    color: white;
+    padding: 15px;
+    max-width: 300px;
+    font-size: 14px;
+    border-left: 5px solid var(--highlight); /* ✅ fixed color */
+    border-radius: 8px;
+}
+
+.thought_box span {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ffd700;
+}
+
+/* ================================
+   Logo Section
+================================ */
+.logo-section {
+    background-color: var(--light-bg);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    align-items: center;
+}
+
+.logo-section img {
+    width: 80px;
+    height: auto;
+}
+
+/* ================================
+   Services
+================================ */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services .intro {
+    font-size: 1em;
+    color: var(--muted);
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service-box {
+    max-width: 250px;
+    text-align: center;
+}
+
+.service-box .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 0.95em;
+    color: var(--muted);
+}
+
+/* ================================
+   Projects Section
+================================ */
+.counrty {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ✅ responsive */
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* ✅ fixed image sizing */
+    display: block;
+}
+
+.project-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.project-title {
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.project-description {
+    color: var(--muted);
+    font-size: 0.9em;
+}
+
+/* ================================
+   Buttons
+================================ */
+.button {
+    display: flex;
+    gap: 15px;
+}
+
+.button button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
+
+.press {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.press:hover {
+    background-color: #737373;
+}
+
+/* ================================
+   Blog Section
+================================ */
+.blog-container {
+    max-width: 960px;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.blog-header {
+    margin-bottom: 30px;
+}
+
+.blog-header h2 {
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.blog-header p {
+    color: var(--muted);
+    font-size: 0.9em;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ✅ responsive */
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+
+.blog-card h3 {
+    color: var(--text);
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.blog-card p {
+    color: var(--muted);
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.blog-card .meta {
+    color: #888;
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+
+.blog-card .category {
+    background-color: #00bcd4;
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+/* ================================
+   Pricing Section
+================================ */
+.pricing-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.pricing-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.pricing-section p {
+    color: var(--muted);
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card ul li {
+    margin: 8px 0;
+    color: green;
+}
+
+.card button {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #5f28c7;
+}
