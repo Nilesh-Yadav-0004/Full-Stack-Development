@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Website</title>
 </head>
-<body onload="api_fetch()">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    #mainContainer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+<body>
+    <h1>TV Show's</h1>
+    <input onchange="api_fetch()" type="text"
+    placeholder="enter your Show...." id="search-input">
+    <div id="mainContainer"></div>
 </body>
 <script src="./index.js"></script>
 </html>
