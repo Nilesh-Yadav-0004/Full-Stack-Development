@@ -1,0 +1,203 @@
+Q.1 What is JavaScript?
+-> * JavaScript is a high-level interpreted programming language primarily used to make web pages interactive.
+ # Example:
+ console.log("Hello,JavaScript!");
+
+Q.2 Where is the internal and External JavaScript writen ?
+-> # internal JavaScript#
+   *writen inside the HTML File* 
+   eg:- <body>
+        <script>
+         Here the code is written of JS.
+        </script>
+   </body>
+    # External JavaScript#
+    *Stored in seperate .JS File.
+    * Linked to HTML using the.
+    eg:- <script src = "filename.js"></script>
+
+Q.3 What is Datatype in JavaScript?
+->  * A Datatype means the kind of value you can store and work with.
+    * It tells JS that What type of data is being handled.
+
+# TYPES DATATYPE in JS.
+
+1.Primitive Datatype.
+2.NON-Primitive Datatype.
+
+1.Primitive Datatype
+ a.Num -> stores numeric value. (integers&decimals)
+  eg:- let age = 20;(integer)
+       let price = 99.99;(decimal)
+
+ b.string -> stores alphabetic value inside the Quotes.
+  eg:- let name = "Nilesh";
+       let city = "Mumbai";
+
+ c.Boolean -> stores data only in two possible values (true or false).
+  eg:- let is student = true;
+       let has Job = false;
+ 
+ d.Undefined -> A variable declared but not assigned a value.
+  eg:- let 'X';
+       console.log(x); //Undefined
+
+ e.NULL -> Represents an empty or nothing value.
+  eg:- let data = null;
+
+ f.Symbol(ES6) -> unique value(often used as a object Keys).(ES6= ECMAScript 6)
+  eg:- let Sym1 = Symbol("ID");
+       let Sym2 = Symbol("ID");
+       console.log(Sym1===Sym2);  //false
+
+ g.BigInt(ES11) -> It is used For very large integers beyond number limit. 
+  eg:- 12345678910....nth ;
+
+2.NON-Primitive Datatypes
+
+a. object -> collection of key-value pairs.
+  eg:- let person = {name:"Nilesh", age:20};
+
+b.Array -> list of values (ordered collection).
+  eg:- let numbers = [10,20,30];
+
+c.Function -> block of reusable code (also treated as an object)
+  eg:- Function greet(){
+    console.log("Hello!");
+  }
+
+Q.4 What are the variable in JavaScript?
+ -> * variables are used to store data. we can declare variables using var,let,and Const.
+  (i) Var -> It is declared a Function
+
+
+Q.5 What is Operators in JavaScript?
+ -> * Operators are special symbols that are used to perform operations on values or variables.
+
+ #Types Of Operators
+
+(a) Arithmetic Operators
+
+*Used for basic math.*
+
+#+ → Addition
+eg:- let a = 10, b = 3;
+     console.log(a + b);  // 13
+
+#- → Subtraction
+eg:- let a = 10, b = 3;
+     console.log(a - b);  // 7
+
+#* → Multiplication
+eg:- let a = 10, b = 3;
+     console.log(a * b);  // 30
+
+#/ → Division
+eg:- let a = 10, b = 3;
+     console.log(a / b);  // 3.33
+
+#% → Modulus (Remainder)
+eg:- let a = 10, b = 3;
+     console.log(a % b);  // 1
+
+#** → Exponent (Power)
+eg:- let a = 10, b = 3;
+     console.log(a ** b); // 1000 (10^3)
+
+(b) Assignment Operators
+
+Used to assign values.
+
+= → Assign
+
++= → Add and assign
+
+-= → Subtract and assign
+
+*= → Multiply and assign
+
+/= → Divide and assign
+
+eg:- let x = 5;
+x += 3; // same as x = x + 3
+console.log(x); // 8
+
+(c) Comparison Operators
+
+Used to compare two values (Result is true or false).
+
+== → Equal (checks only value)
+
+=== → Strict Equal (checks value + type)
+
+!= → Not equal
+
+!== → Strict not equal
+
+> → Greater than
+
+< → Less than
+
+>= → Greater than or equal
+
+<= → Less than or equal
+
+eg:- console.log(5 == "5");   // true  (value same)
+console.log(5 === "5");  // false (different type)
+console.log(10 > 5);     // true
+console.log(10 <= 5);    // false
+
+(d) Logical Operators
+
+Used to combine conditions.
+
+&& → AND (both true)
+
+|| → OR (any one true)
+
+! → NOT (opposite)
+
+eg:- let age = 20;
+console.log(age > 18 && age < 30); // true
+console.log(age > 18 || age < 10); // true
+console.log(!(age > 18));          // false
+
+(e) Increment / Decrement Operators
+
+Increase or decrease a value by 1.
+
+++ → Increment
+
+-- → Decrement
+
+eg:- let n = 5;
+console.log(++n); // 6 (pre-increment)
+console.log(n--); // 6 (post-decrement, prints first then decreases)
+console.log(n);   // 5
+
+(f) Ternary Operator (?:)
+
+Shortcut for if...else.
+
+Syntax:
+
+condition ? valueIfTrue : valueIfFalse;
+
+eg:- let age = 18;
+let result = (age >= 18) ? "Adult" : "Minor";
+console.log(result); // Adult
+
+
+Q.6 What is IF Statement in JavaScript?
+-> * The if statement is used to make decisions in JavaScript.
+It checks a condition (true/false).
+
+If the condition is true → the code inside runs.
+
+If the condition is false → the code is skipped.
+
+#Types of Statement 
+(a) IF.
+(b) IF Else.
+(c) Else IF.
+
