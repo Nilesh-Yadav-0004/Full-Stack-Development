@@ -12,10 +12,10 @@ btn_Add.addEventListener("click", () =>{
     }
     store.push(dataObj);
 
-    //Local Storage...
+    //Local Storage
     localStorage.setItem("todos",JSON.stringify(store));
     document.querySelector("#todoVal").value = "";
-    read_Todo()
+    read_Todo()                                           
 });
 
 const read_Todo = () => {
@@ -28,18 +28,29 @@ const read_Todo = () => {
         const input_is_completes = document.createElement("input");
         const btn_edits = document.createElement("button");
         const btn_delete = document.createElement("button");
+        // this is edit els as start
+        const inputEdit = document.createElement("input");
+        const btn_cancel = document.createElement("button");
+        const btn_confirm = document.createElement("button");
 
+        inputEdit.value = els.todo;
+        inputEdit.name = "change_edit_input";
 
+        btn_cancel.innerText = "cancel";
+        btn_confirm.innerText = "confirm";
 
-        textTodo.innerText = el.todo;
+        // this is edit els as end 
+        // Actual Code
+
+        textTodo.innerText = els.todo;
 
         input_is_completes.type = "checkbox";
-        input_is_completes.name = "complete_input";
 
         todoDiv.className = "todo_divs";
 
         btn_delete.innerText = "delete";
         btn_delete.className = "btn_isDelete";
+
         // Delete Functionality
         btn_delete.addEventListener("click",() =>{
             deleteFunction(els.id);
@@ -48,25 +59,52 @@ const read_Todo = () => {
         btn_edits.innerText = "edit";
         btn_edits.className = "btn_isEdit";
 
-        btn_cancel.addEventListener("click", () =>{
-            cancelHandel(el.id);
-    })
+        btn_cancel.addEventListener("click",() =>{
+            cancelHandle(els.id);
+        });
+        
+        // Logic to hide
+        textTodo.className = els.isEdits ? "hideData" : "showData";
+        inputEdit.className = els.isEdits ? "showData" : "hideData";
 
-    // logic to hide
+        // btn logic
+        btn_edits.className = els.isEdits ? "hideData" : "showData btn_isEdit";
+        btn_cancel.className = els.isEdits ? "showData btn_isDelete" : "hideData";
 
-    textTodo.className = el.isEdits ? "hideData": "showData";
-    inputEdit.className = el.isEdits ? "showData": "hideData";
+        btn_delete.className = els.isEdits ? "hideData" : "showData btn_isDelete";
+        btn_confirm.className = els.isEdits ? "showData btn_isEdit" : "hideData";
 
-    // btn logic
 
-    btn_edits.className = el.isEdits ? "hideData": "showData btn_isEdit";
-    btn_cancel.className = el.isEdits ? "showData btn_isDelete": "hideData";
+        btn_edits.addEventListener("click", () =>{
+            editFunction(els.id);
+        });
 
-    
-        todoDiv.append(input_is_completes,textTodo,btn_edits,btn_delete);
+        todoDiv.append(input_is_completes,textTodo,inputEdit,btn_edits,btn_delete,btn_cancel,btn_confirm);
         mainDiv.append(todoDiv);
     });
 }
+
+const cancelHandle = (id) =>{
+    const editData = store.map((els) =>{
+      return els.id === id ? {...els, isEdits:false} :els;
+    });
+    // console.log('🚀 ~ editData:', editData);
+    store = editData;
+    localStorage.setItem("todos", JSON.stringify(store));
+    read_Todo();
+}
+
+const editFunction =(id) =>{
+    const editData = store.map((els) =>{
+      return els.id === id ? {...els, isEdits:true} :els;
+    });
+    // console.log('🚀 ~ editData:', editData);
+    store = editData;
+    localStorage.setItem("todos", JSON.stringify(store));
+    read_Todo();
+}
+
+
 
 const deleteFunction = (id) =>{
     const Del = store.filter((els) => els.id !== id);
