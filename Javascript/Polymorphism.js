@@ -66,3 +66,4 @@ function startPrint(printerObj){
 
 startPrint(pdfPrinter);
 startPrint(htmlPrinter);
+
