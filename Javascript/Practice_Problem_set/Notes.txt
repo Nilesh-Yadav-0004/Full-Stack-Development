@@ -1,0 +1,22 @@
+/* What is function and why do we use it ? */
+// -> A function in JavaScript is a block of code that performs a specific task.
+
+// We use functions to:
+
+// Avoid repeating code (write once, use many times).
+
+// Make code organized and easy to read.
+
+// Reuse logic whenever needed.
+
+// 📘 Example:
+
+// function greet() {
+//   console.log("Hello, Nilesh!");
+// }
+
+// greet(); // calling the function
+
+
+// 👉 Here, greet() is a function that prints “Hello, Nilesh!”.
+// You can call it anytime instead of writing console.log("Hello, Nilesh!") again and again.
