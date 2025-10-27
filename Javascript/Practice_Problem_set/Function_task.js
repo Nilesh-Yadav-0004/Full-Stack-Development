@@ -3,4 +3,5 @@
     return a + b; 
  }
 
+ let result = addNumbers(5, 7);
  
