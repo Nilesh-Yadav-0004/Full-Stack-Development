@@ -1,0 +1,29 @@
+Q.1 What is hook in react?
+=> In React, a Hook is a special function that lets you use React features (like state and lifecycle methods) inside functional components — without writing a class.
+   * A Hook is a function that allows you to “hook into” React’s features such as state, lifecycle, and context.
+   
+   | Hook              | Purpose                                                  | Example                                                     |
+| ----------------- | -------------------------------------------------------- | ----------------------------------------------------------- |
+| **useState()**    | Adds **state** to a functional component                 | `const [count, setCount] = useState(0);`                    |
+| **useEffect()**   | Runs **side effects** (like fetching data, timers, etc.) | `useEffect(() => { document.title = count; }, [count]);`    |
+| **useContext()**  | Accesses **context data** directly                       | `const user = useContext(UserContext);`                     |
+| **useRef()**      | Accesses **DOM elements** or keeps mutable values        | `const inputRef = useRef(null);`                            |
+| **useMemo()**     | **Caches** computed values to improve performance        | `const result = useMemo(() => compute(a, b), [a, b]);`      |
+| **useCallback()** | **Caches** functions to prevent unnecessary re-renders   | `const handleClick = useCallback(() => doSomething(), []);` |
+
+Q.2 What is component lifecycle ?
+=>  In React, the Component Lifecycle refers to the stages a component goes through — from being created (mounted), to updated, and finally removed (unmounted) from the DOM.
+    * These lifecycle phases are important for performing actions like fetching data, updating the UI, cleaning up resources, etc.
+    | Phase          | Description                                                          |
+| -------------- | -------------------------------------------------------------------- |
+| **Mounting**   | When the component is **created** and inserted into the DOM.         |
+| **Updating**   | When the component’s **state or props change**, causing a re-render. |
+| **Unmounting** | When the component is **removed** from the DOM.                      |
+
+Q.3 What is mount and unmount ?
+=>  In React, the terms mount and unmount refer to the beginning and end of a component’s lifecycle — when it appears and disappears from the screen (DOM).
+    * 1. Mounting
+
+➡️ Mounting means creating the component and adding it to the DOM (the web page).
+It happens when the component first appears on the screen.
+
