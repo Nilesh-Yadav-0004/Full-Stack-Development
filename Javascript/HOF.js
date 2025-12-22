@@ -14,7 +14,7 @@ let newArr= arr.map((elements,index,self)=>{
     if(elements=== 7) {
         newArr.push(elements);
         return elements
-    };
+    };.....
 })
 
 console.log('~ newArr:', newArr);
