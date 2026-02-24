@@ -2,3 +2,11 @@ What is DSA ?
 
 DSA stands for Data structure and Algorithm.
 
+DSA Includes:- (i) Array.
+               (ii) Linked list.
+               (iii) Stack.
+               (iv)  Queues.
+               (v)   Hash Table.
+               (vi)  Trees.
+               (vii) Graphs.
+               (viii) 
